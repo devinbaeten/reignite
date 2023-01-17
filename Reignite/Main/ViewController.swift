@@ -9,13 +9,8 @@ import UIKit
 import WebKit
 import SwiftyXMLParser
 import Alamofire
-import GoogleMobileAds
 
 class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegate {
-    
-    var bannerView: GADBannerView!
-    
-    @IBOutlet weak var adSpace: UIView!
     
     @IBOutlet weak var browserView: WKWebView!
     @IBOutlet weak var usernameField: UITextField!
@@ -36,14 +31,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        // In this case, we instantiate the banner with desired ad size.
-        bannerView = GADBannerView(adSize: GADAdSizeBanner)
-        addBannerViewToView(bannerView)
-        bannerView.adUnitID = "ca-app-pub-1078692801643345/9923176532"
-//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
         
         let needsIntro = UserDefaults.standard.bool(forKey: "needsIntro")
         
@@ -127,15 +114,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegat
         // Init Keyboard
         usernameField.becomeFirstResponder()
     }
-    
-    func addBannerViewToView(_ bannerView: GADBannerView) {
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
-        let viewWidth = adSpace.frame.width
-        bannerView.adSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth)
-        adSpace.addSubview(bannerView)
-        bannerView.centerXAnchor.constraint(equalTo: adSpace.centerXAnchor).isActive = true
-        bannerView.centerYAnchor.constraint(equalTo: adSpace.centerYAnchor).isActive = true
-       }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)

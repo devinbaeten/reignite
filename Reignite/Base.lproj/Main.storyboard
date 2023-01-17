@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f4Z-Dq-TbV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f4Z-Dq-TbV">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -74,7 +74,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9t7-P0-NtO">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -82,33 +82,10 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="b6p-jw-PbF">
-                                <rect key="frame" x="15" y="98" width="384" height="247"/>
+                                <rect key="frame" x="15" y="102" width="384" height="161"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QB0-wy-J4h" userLabel="AdSpace">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="75"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoA-F1-aiq">
-                                                <rect key="frame" x="146.5" y="27.5" width="91" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="DoA-F1-aiq" firstAttribute="centerY" secondItem="QB0-wy-J4h" secondAttribute="centerY" id="AJ3-6J-A0r"/>
-                                            <constraint firstAttribute="height" constant="75" id="YYr-UO-UID"/>
-                                            <constraint firstItem="DoA-F1-aiq" firstAttribute="centerX" secondItem="QB0-wy-J4h" secondAttribute="centerX" id="p6H-3I-cpz"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2V-0O-TNK" userLabel="BitmojiView">
-                                        <rect key="frame" x="0.0" y="86" width="384" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="110"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="HCp-2j-Tm9" userLabel="Background">
                                                 <rect key="frame" x="147" y="10" width="90" height="90"/>
@@ -139,9 +116,9 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="3Cv-hg-J4Y"/>
                                             <constraint firstItem="UCu-sZ-BbM" firstAttribute="top" secondItem="I2V-0O-TNK" secondAttribute="top" id="ARq-AL-TPI"/>
                                             <constraint firstItem="R5n-A0-BVx" firstAttribute="centerX" secondItem="I2V-0O-TNK" secondAttribute="centerX" id="DIU-iB-xpE"/>
-                                            <constraint firstAttribute="height" constant="110" id="EMD-R5-YBa"/>
                                             <constraint firstItem="HCp-2j-Tm9" firstAttribute="centerX" secondItem="I2V-0O-TNK" secondAttribute="centerX" id="Eg7-OM-rKF"/>
                                             <constraint firstItem="R5n-A0-BVx" firstAttribute="centerY" secondItem="I2V-0O-TNK" secondAttribute="centerY" id="W6z-UX-yuC"/>
                                             <constraint firstItem="HCp-2j-Tm9" firstAttribute="centerY" secondItem="I2V-0O-TNK" secondAttribute="centerY" id="nEh-67-VRI"/>
@@ -159,7 +136,7 @@
                                         </variation>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyY-vN-VxY">
-                                        <rect key="frame" x="0.0" y="207" width="384" height="40"/>
+                                        <rect key="frame" x="0.0" y="121" width="384" height="40"/>
                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="9UB-jN-bSw"/>
@@ -173,15 +150,12 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="247" id="hpG-Zj-Jr8"/>
-                                </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ph0-XJ-2x5">
-                                <rect key="frame" x="0.0" y="345" width="414" height="551"/>
+                                <rect key="frame" x="0.0" y="263" width="414" height="633"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBY-GJ-j7Q">
-                                        <rect key="frame" x="132" y="200.5" width="150" height="150"/>
+                                        <rect key="frame" x="132" y="241.5" width="150" height="150"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="FMU-xs-dpj"/>
@@ -244,7 +218,6 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="adSpace" destination="QB0-wy-J4h" id="dln-c1-IQC"/>
                         <outlet property="bitmojiPreview" destination="R5n-A0-BVx" id="fMs-xi-zfG"/>
                         <outlet property="bmView" destination="I2V-0O-TNK" id="UvN-ku-iKk"/>
                         <outlet property="browserView" destination="9t7-P0-NtO" id="EGP-y8-UpU"/>
@@ -411,7 +384,7 @@
             <objects>
                 <viewController id="xnv-na-bBh" customClass="IntroductionVC" customModule="Reignite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xnt-nZ-K8Z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're all set!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwP-Sm-G5O">
@@ -430,7 +403,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAr-zH-Ie1">
-                                <rect key="frame" x="25" y="727" width="364" height="50"/>
+                                <rect key="frame" x="25" y="723" width="364" height="50"/>
                                 <color key="backgroundColor" red="0.30980392156862746" green="0.6705882352941176" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9Pq-jj-hJo"/>
@@ -476,7 +449,7 @@
             <objects>
                 <navigationController storyboardIdentifier="setupFlow" id="VOG-yB-Y4K" customClass="OnboardingNavigation" customModule="Reignite" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LfV-vu-8fb">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -496,13 +469,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIL-IL-Yu0">
-                                <rect key="frame" x="129" y="113" width="156" height="43"/>
+                                <rect key="frame" x="129" y="117" width="156" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before you can restore any streaks, you'll need to input some information regarding your Snapchat account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOJ-0t-c6b">
-                                <rect key="frame" x="47.5" y="176" width="319" height="61"/>
+                                <rect key="frame" x="47.5" y="180" width="319" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="nDu-Rd-D0h"/>
                                 </constraints>
@@ -527,7 +500,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTE-e2-rbV">
-                                <rect key="frame" x="144.5" y="249" width="125" height="35"/>
+                                <rect key="frame" x="144.5" y="253" width="125" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="9D1-cm-MRc"/>
                                     <constraint firstAttribute="width" constant="125" id="jrO-aq-bEt"/>
@@ -585,7 +558,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="picaboo11@icloud.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tCA-vX-XCJ" customClass="keyb">
-                                <rect key="frame" x="25" y="205.5" width="364" height="35"/>
+                                <rect key="frame" x="25" y="209.5" width="364" height="35"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="WiK-kO-Gcp"/>
@@ -594,7 +567,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="yes" smartQuotesType="no" textContentType="email"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixs-Zr-eTj">
-                                <rect key="frame" x="40" y="103" width="334" height="32.5"/>
+                                <rect key="frame" x="40" y="107" width="334" height="32.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -616,7 +589,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This needs to be the one associated with your Snapchat account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGG-gs-gqI">
-                                <rect key="frame" x="40" y="142" width="334" height="38.5"/>
+                                <rect key="frame" x="40" y="146" width="334" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -659,7 +632,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="teamsnapchat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yyD-Ol-d7Y" customClass="keyb">
-                                <rect key="frame" x="25" y="205.5" width="364" height="35"/>
+                                <rect key="frame" x="25" y="209.5" width="364" height="35"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="7Ai-G0-bO8"/>
@@ -668,7 +641,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="yes" smartQuotesType="no" textContentType="username"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Username" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqE-RT-R4f">
-                                <rect key="frame" x="40" y="103" width="334" height="32.5"/>
+                                <rect key="frame" x="40" y="107" width="334" height="32.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -690,7 +663,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This needs to be the one associated with your Snapchat account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvQ-Rk-Gzq">
-                                <rect key="frame" x="40" y="142" width="334" height="38.5"/>
+                                <rect key="frame" x="40" y="146" width="334" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -733,7 +706,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+1 (800) 867-5309" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OEP-2V-X8e" customClass="keyb">
-                                <rect key="frame" x="25" y="205.5" width="364" height="35"/>
+                                <rect key="frame" x="25" y="209.5" width="364" height="35"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="bOh-nY-MKr"/>
@@ -742,7 +715,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="yes" smartQuotesType="no" textContentType="tel"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4D-dh-mJI">
-                                <rect key="frame" x="40" y="103" width="334" height="32.5"/>
+                                <rect key="frame" x="40" y="107" width="334" height="32.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -764,7 +737,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This needs to be the one associated with your Snapchat account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ind-xM-MQ4">
-                                <rect key="frame" x="40" y="142" width="334" height="38.5"/>
+                                <rect key="frame" x="40" y="146" width="334" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -869,7 +842,7 @@
                 <navigationController storyboardIdentifier="MainNC" automaticallyAdjustsScrollViewInsets="NO" id="f4Z-Dq-TbV" customClass="MainNavigationController" customModule="Reignite" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T3d-PH-9MP">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8624A0B728D95EDF00163515 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8624A0B628D95EDF00163515 /* PhoneNumberKit */; };
-		865FA5AF287ABE0800E3936B /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 865FA5AE287ABE0800E3936B /* GoogleMobileAds */; };
 		8667081B27FF454F00F1FFB7 /* OnboardingNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667081A27FF454F00F1FFB7 /* OnboardingNavigation.swift */; };
 		8667081E27FF473300F1FFB7 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667081D27FF473300F1FFB7 /* Splash.swift */; };
 		8667082027FF5B4F00F1FFB7 /* Questions-Depreacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667081F27FF5B4F00F1FFB7 /* Questions-Depreacted.swift */; };
@@ -88,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865FA5AF287ABE0800E3936B /* GoogleMobileAds in Frameworks */,
 				8624A0B728D95EDF00163515 /* PhoneNumberKit in Frameworks */,
 				86E8D8BD27714190006E032F /* Alamofire in Frameworks */,
 				86996827287430E300A24B0B /* SwiftyXMLParser in Frameworks */,
@@ -244,7 +242,6 @@
 			packageProductDependencies = (
 				86E8D8BC27714190006E032F /* Alamofire */,
 				86996826287430E300A24B0B /* SwiftyXMLParser */,
-				865FA5AE287ABE0800E3936B /* GoogleMobileAds */,
 				8624A0B628D95EDF00163515 /* PhoneNumberKit */,
 			);
 			productName = Reignite;
@@ -322,7 +319,6 @@
 			packageReferences = (
 				86E8D8BB27714190006E032F /* XCRemoteSwiftPackageReference "Alamofire" */,
 				86996825287430E300A24B0B /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */,
-				865FA5AD287ABE0800E3936B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 				8624A0B528D95EDF00163515 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */,
 			);
 			productRefGroup = 86E8D88927713EF2006E032F /* Products */;
@@ -563,7 +559,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 443UGBEK38;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reignite/Info.plist;
@@ -594,7 +590,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 443UGBEK38;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reignite/Info.plist;
@@ -764,14 +760,6 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		865FA5AD287ABE0800E3936B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
 		86996825287430E300A24B0B /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/yahoojapan/SwiftyXMLParser.git";
@@ -795,11 +783,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8624A0B528D95EDF00163515 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */;
 			productName = PhoneNumberKit;
-		};
-		865FA5AE287ABE0800E3936B /* GoogleMobileAds */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 865FA5AD287ABE0800E3936B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
-			productName = GoogleMobileAds;
 		};
 		86996826287430E300A24B0B /* SwiftyXMLParser */ = {
 			isa = XCSwiftPackageProductDependency;
