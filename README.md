@@ -10,7 +10,7 @@ A simple tool for quickly restoring your Snapchat streaks
 
 ## Usage
 **This app is intended for educational and informational purposes only, it will not be made available on any app stores.**
-- You can use the link provided to install the app on your iOS device for testing and experimentation. Use at your own risk.
+- You can use [this link](https://testflight.apple.com/join/Ul0bzYkI) to install the app on your iOS device for testing and experimentation. Use at your own risk.
 - Of course, you can also just clone this repo to your machine and mess around with the code as you'd like as well (please do!)
 
 More info available at: https://reignite.dbapps.dev
