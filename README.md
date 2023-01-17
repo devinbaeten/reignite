@@ -2,7 +2,7 @@
 A simple tool for quickly restoring your Snapchat streaks
 
 [![Version](https://img.shields.io/badge/Version-1.0-blue.svg)](https://shields.io/)
-[![Build](https://img.shields.io/badge/Build-17-blue.svg)](https://shields.io/)
+[![Build](https://img.shields.io/badge/Build-18-blue.svg)](https://shields.io/)
 [![Testflight](https://img.shields.io/badge/TestFlight%20Active-YES-green.svg)](https://shields.io/)
 
 ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
